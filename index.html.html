@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>html,body{margin:0;padding:0}</style>
+<title>Inicio | VexPro</title>
+<meta name="title" content="Inicio | VexPro">
+<meta property="og:title" content="Inicio | VexPro">
+<meta name="description" content="No operamos contra ti. Vex Pro opera con latencia menor a 20 ms, procesa retiros en menos de 24 horas y te atiende en español, con personas, no con chatbots.">
+<meta property="og:description" content="No operamos contra ti. Vex Pro opera con latencia menor a 20 ms, procesa retiros en menos de 24 horas y te atiende en español, con personas, no con chatbots.">
+<meta name="image" content="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a4f07ada1b7eb60e6d2e428.svg">
+<meta property="og:image" content="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a4f07ada1b7eb60e6d2e428.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a4f07ada1b7eb60e6d2e428.svg">
+<meta property="og:type" content="website">
+<meta property="twitter:type" content="website">
+<meta name="facebook-domain-verification" content="wxval9ydvsbxnix8wmmmm6053dx57c">
+<link rel="icon" href="https://vexprofx.com/favicon-32.png">
+</head>
+<body>
+<style>
+/* Tipografías aprobadas por el cliente (junta): Sora para títulos/display,
+   Urbanist para textos. Ambas de Google Fonts, sin licencias pendientes. */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+#vx-root{
+  /* Paleta Manual de Marca VexPro */
+  --bg:#0A0A0A; --s1:#15130F; --s2:#1D1A14;
+  --gold:#B78C32;            /* Amarillo Oscuro */
+  --gold2:#F9E298;           /* Amarillo Claro */
+  --grad-gold:linear-gradient(100deg,#F9E298 0%,#B78C32 100%);   /* Degradado dorado */
+  --grad-silver:linear-gradient(100deg,#FFFFFF 0%,#79797A 100%); /* Degradado plateado */
+  --w:#FFFFFF; --g:#A8A8AA; --g2:#79797A; /* Gris Oscuro de marca */
+  --bd:rgba(255,255,255,.07);
+  --red-bg:#1A0808; --red:#F87171; --red-bd:rgba(239,68,68,.2);
+  --green:#22C55E; --amber:#F9E298;
+  --max:1140px; --r:12px;
+  --disp:'Sora',sans-serif;
+  --body:'Urbanist',sans-serif;
+}
+#vx-root, #vx-root *,#vx-root *::before,#vx-root *::after{box-sizing:border-box;margin:0;padding:0}
+#vx-root{background:var(--bg);color:var(--w);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%}
+#vx-root a{color:inherit;text-decoration:none}
+#vx-root img{max-width:100%;display:block}
+#vx-root button{font-family:var(--body)}
+/* ── RISK BAR ── */
+/* ── TOP BAR ── */
+#vx-root .vx-top-bar{background:var(--s1);border-bottom:1px solid rgba(183,140,50,.15);padding:10px 20px}
+#vx-root .vx-top-bar-i{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+#vx-root .vx-tb-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--w);font-weight:500;white-space:nowrap}
+#vx-root .vx-tb-teal{color:var(--gold);font-weight:700}
+#vx-root .vx-tb-sep{color:rgba(183,140,50,.3);font-size:18px;font-weight:200;line-height:1}
+@media(max-width:600px){
+#vx-root .vx-tb-sep{display:none}
+#vx-root .vx-top-bar{background:#F6F3EC;border-bottom:1px solid rgba(183,140,50,.30);padding:12px 18px}
+#vx-root .vx-top-bar-i{flex-direction:column;gap:6px}
+#vx-root .vx-tb-item{white-space:normal;text-align:center;justify-content:center;font-size:12px;line-height:1.5;color:#3E3728}
+#vx-root .vx-tb-teal{color:#8F6C24}
+}
+/* ── NAV ── */
+#vx-root .vx-nav{position:-webkit-sticky;position:sticky;top:0;z-index:100;background:rgba(10,10,10,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+#vx-root .vx-nav.vx-nav-fixed{position:fixed;top:0;left:0;right:0;z-index:9999;box-shadow:0 6px 30px rgba(0,0,0,.45);animation:vxNavIn .25s ease}
+@keyframes vxNavIn{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+#vx-root .vx-nav-i{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:74px;padding:0 24px}
+@media(max-width:600px){
+#vx-root .vx-nav-i{height:60px;padding:0 14px;gap:10px}
+#vx-root .vx-logo-img{display:none}
+#vx-root .vx-logo-img-m{display:block;height:36px;margin:2px 0}
+#vx-root .vx-logo-link{min-width:0;flex-shrink:1}
+#vx-root .vx-nav-btn{font-size:12px;padding:9px 13px;border-radius:7px}
+}
+#vx-root .vx-logo-link{display:flex;align-items:center}
+#vx-root .vx-logo-img{height:46px;width:auto;display:block}
+#vx-root .vx-logo-img-m{display:none;height:42px;width:auto}
+#vx-root .vx-logo{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:-.02em;color:var(--w)}
+#vx-root .vx-logo span{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+#vx-root .vx-nav-btn{background:var(--grad-gold);color:#0A0A0A;font-family:var(--disp);font-weight:700;font-size:13px;padding:10px 22px;border-radius:8px;border:none;cursor:pointer;transition:filter .15s,box-shadow .15s;letter-spacing:.01em;white-space:nowrap;flex-shrink:0}
+#vx-root .vx-nav-btn:hover{filter:brightness(1.12);box-shadow:0 0 18px rgba(183,140,50,.35)}
+/* ── HERO ── */
+#vx-root .vx-hero{max-width:var(--max);margin:0 auto;padding:88px 24px 64px;text-align:center}
+#vx-root .vx-hero h1{margin-left:auto;margin-right:auto}
+#vx-root .vx-hero-sub{margin-left:auto;margin-right:auto}
+#vx-root .vx-hero-ctas,#vx-root .vx-hero-proof,#vx-root .vx-hero-bullets{justify-content:center}
+#vx-root .vx-hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(183,140,50,.08);border:1px solid rgba(183,140,50,.22);border-radius:100px;padding:6px 14px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+#vx-root .vx-pulse{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;flex-shrink:0}
+#vx-root .vx-hero h1{font-family:var(--disp);font-weight:700;font-size:clamp(40px,6.5vw,72px);line-height:1.04;letter-spacing:-.04em;margin-bottom:22px;max-width:820px}
+#vx-root .vx-hero h1 em{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+#vx-root .vx-hero-sub{font-size:clamp(16px,2vw,19px);color:var(--g);line-height:1.7;max-width:560px;margin-bottom:36px}
+#vx-root .vx-hero-ctas{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:28px}
+#vx-root .vx-btn{position:relative;overflow:hidden;background:var(--grad-gold);color:#0A0A0A;font-family:var(--disp);font-weight:700;font-size:16px;padding:15px 30px;border-radius:10px;border:none;cursor:pointer;transition:filter .15s,transform .15s,box-shadow .15s;display:inline-block;letter-spacing:.01em}
+#vx-root .vx-btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 26px rgba(183,140,50,.35)}
+#vx-root .vx-btn::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .5s ease}
+#vx-root .vx-btn:hover::after{left:130%}
+#vx-root .vx-fcta .vx-btn{animation:vxGlow 2.8s ease-in-out infinite}
+@keyframes vxGlow{0%,100%{box-shadow:0 0 0 rgba(183,140,50,0)}50%{box-shadow:0 0 34px rgba(183,140,50,.42)}}
+@media(prefers-reduced-motion:reduce){#vx-root .vx-fcta .vx-btn{animation:none}}
+#vx-root .btn-sm{font-size:14px;padding:12px 22px}
+#vx-root .vx-btn-outline{background:transparent;color:var(--gold);border:1px solid rgba(183,140,50,.4);font-family:var(--disp);font-weight:600;font-size:15px;padding:14px 24px;border-radius:10px;cursor:pointer;transition:all .15s;display:inline-block}
+#vx-root .vx-btn-outline:hover{background:rgba(183,140,50,.08)}
+#vx-root .vx-hero-proof{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+#vx-root .vx-stars{color:var(--amber);font-size:17px;letter-spacing:2px}
+/* Badge estilo widget de Trustpilot (verde oficial #00B67A) */
+#vx-root .vx-tp-link{display:inline-flex;align-items:center;gap:10px;cursor:pointer;transition:opacity .15s}
+#vx-root .vx-tp-link:hover{opacity:.85}
+#vx-root .vx-tp-link:hover .vx-proof-txt{color:var(--w);text-decoration:underline;text-underline-offset:3px}
+#vx-root .vx-tp-badge{display:inline-flex;gap:3px}
+#vx-root .vx-tp-badge i{width:24px;height:24px;background:#00B67A;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:14px;line-height:1;border-radius:3px}
+#vx-root .vx-proof-txt{font-size:13px;color:var(--g2)}
+/* ── TRUST STRIP ── */
+#vx-root .vx-trust{border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--s1)}
+#vx-root .vx-trust-i{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);padding:28px 24px;gap:12px}
+#vx-root .vx-t-item{text-align:center;padding:4px 12px}
+#vx-root .vx-t-num{font-family:var(--disp);font-weight:700;font-size:30px;background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.03em;margin-bottom:4px;line-height:1}
+#vx-root .vx-t-lbl{font-size:13px;color:var(--g);line-height:1.4}
+/* ── SECTIONS ── */
+#vx-root .vx-sec{padding:84px 24px;border-top:1px solid rgba(183,140,50,.10)}
+#vx-cuentas{scroll-margin-top:92px}
+#vx-root .vx-con{max-width:var(--max);margin:0 auto}
+#vx-root .vx-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+#vx-root h2{font-family:var(--disp);font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:-.03em;line-height:1.1;margin-bottom:14px}
+#vx-root h2 em{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+#vx-root .vx-sec-desc{font-size:17px;color:var(--g);max-width:600px;line-height:1.7;margin-bottom:48px}
+/* ── PAIN CARDS ── */
+#vx-root .vx-pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#vx-root .vx-pain-c{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:28px;transition:border-color .2s}
+#vx-root .vx-pain-c:hover{border-color:rgba(183,140,50,.25)}
+#vx-root .vx-pain-icon{margin-bottom:18px;display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:14px;background:rgba(183,140,50,.10);border:1px solid rgba(183,140,50,.26)}
+#vx-root .vx-pain-c h3{font-family:var(--disp);font-weight:700;font-size:18px;margin-bottom:10px}
+#vx-root .vx-pain-c p{font-size:14px;color:var(--g);line-height:1.65}
+#vx-root .vx-pain-stat{font-family:var(--disp);font-weight:700;font-size:32px;color:var(--gold);margin-top:18px;letter-spacing:-.02em}
+#vx-root .vx-pain-stat-lbl{font-size:12px;color:var(--g);margin-top:2px}
+/* ── COMPARISON ── */
+#vx-root .vx-cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:48px}
+#vx-root .vx-cmp-col{border-radius:var(--r);overflow:hidden}
+#vx-root .vx-cmp-head{padding:18px 22px;font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.02em}
+#vx-root .vx-cmp-col.bad{opacity:.82;filter:saturate(.85)}
+#vx-root .vx-cmp-col.good{box-shadow:0 10px 44px rgba(183,140,50,.12)}
+#vx-root .vx-cmp-col.bad .vx-cmp-head{background:#180C0C;color:var(--red);border:1px solid var(--red-bd);border-bottom:none;display:flex;align-items:center;gap:8px}
+#vx-root .vx-cmp-col.good .vx-cmp-head{background:rgba(183,140,50,.07);color:var(--gold);border:1px solid rgba(183,140,50,.22);border-bottom:none;display:flex;align-items:center;gap:8px}
+#vx-root .vx-cmp-row{padding:13px 22px;font-size:14px;display:flex;align-items:center;gap:10px;border-left:1px solid;border-right:1px solid;line-height:1.5}
+#vx-root .vx-cmp-col.bad .vx-cmp-row{background:#100808;border-color:var(--red-bd);color:#FCA5A5}
+#vx-root .vx-cmp-col.good .vx-cmp-row{background:rgba(183,140,50,.03);border-color:rgba(183,140,50,.14);color:var(--w)}
+#vx-root .vx-cmp-row:last-child{border-bottom:1px solid}
+#vx-root .vx-cmp-col.bad .vx-cmp-row:last-child{border-color:var(--red-bd)}
+#vx-root .vx-cmp-col.good .vx-cmp-row:last-child{border-color:rgba(183,140,50,.14)}
+#vx-root .vx-ci{flex-shrink:0;font-size:15px}
+#vx-root .vx-cmp-cta{text-align:center;margin-top:32px}
+/* ── COMPARISON LIGHT SECTION ── */
+#vx-root .vx-sec-light{background:#F6F3EC;border-top:1px solid rgba(183,140,50,.22)}
+#vx-root .vx-sec-light .vx-tag{color:#8F6C24}
+#vx-root .vx-sec-light h2{color:#0F0D0A}
+#vx-root .vx-sec-light h2 em{background:linear-gradient(100deg,#B78C32 0%,#7E5E1E 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Columna "otros": tarjeta blanca, rojos vivos sobre claro */
+#vx-root .vx-sec-light .vx-cmp-col.bad{opacity:1;filter:none;box-shadow:0 4px 24px rgba(30,20,5,.06);border-radius:var(--r)}
+#vx-root .vx-sec-light .vx-cmp-col.bad .vx-cmp-head{background:#FBEDED;color:#B3261E;border:1px solid rgba(179,38,30,.22);border-bottom:none}
+#vx-root .vx-sec-light .vx-cmp-col.bad .vx-cmp-row{background:#FFFFFF;border-color:rgba(179,38,30,.16);color:#6E5654}
+#vx-root .vx-sec-light .vx-cmp-col.bad .vx-cmp-row:last-child{border-color:rgba(179,38,30,.16)}
+#vx-root .vx-sec-light .vx-cmp-col.bad .vx-ci{color:#C2413B}
+/* Columna Vex Pro: tarjeta NEGRA con dorado, la marca invertida sobre claro */
+#vx-root .vx-sec-light .vx-cmp-col.good{border-radius:var(--r);border:1px solid transparent;background:linear-gradient(#0C0B09,#0C0B09) padding-box,var(--grad-gold) border-box;box-shadow:0 24px 70px rgba(60,42,8,.22)}
+#vx-root .vx-sec-light .vx-cmp-col.good .vx-cmp-head{background:rgba(183,140,50,.12);color:var(--gold2);border:none;border-bottom:1px solid rgba(183,140,50,.25)}
+#vx-root .vx-sec-light .vx-cmp-col.good .vx-cmp-row{background:transparent;border:none;color:#F5F1E8}
+#vx-root .vx-sec-light .vx-cmp-col.good .vx-cmp-row:last-child{border:none}
+#vx-root .vx-sec-light .vx-cmp-col.good .vx-ci{color:var(--gold)}
+
+/* ── ACCOUNTS ── */
+#vx-root .vx-acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#vx-root .vx-acc-c{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:26px;transition:border-color .2s}
+#vx-root .vx-acc-c:hover{border-color:rgba(183,140,50,.3)}
+#vx-root .vx-acc-c.feat{border:1px solid transparent;background:linear-gradient(var(--s2),var(--s2)) padding-box,var(--grad-gold) border-box;box-shadow:0 12px 48px rgba(183,140,50,.14);position:relative}
+@media(min-width:901px){#vx-root .vx-acc-c.feat{transform:scale(1.035)}}
+#vx-root .vx-acc-badge{display:inline-block;background:var(--gold);color:#0A0A0A;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:14px}
+#vx-root .vx-acc-c h3{font-family:var(--disp);font-weight:700;font-size:22px;margin-bottom:5px}
+#vx-root .vx-acc-from{font-size:13px;color:var(--g);margin-bottom:18px}
+#vx-root .vx-acc-from strong{font-family:var(--disp);font-size:30px;font-weight:700;color:var(--w)}
+#vx-root .vx-feat-row{display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px solid var(--bd)}
+#vx-root .vx-feat-row:last-child{border:none}
+#vx-root .vx-feat-row span:last-child{font-weight:600;color:var(--gold)}
+#vx-root .vx-acc-btn{width:100%;background:transparent;border:1px solid rgba(183,140,50,.35);color:var(--gold);font-family:var(--disp);font-weight:700;font-size:14px;padding:12px;border-radius:8px;cursor:pointer;transition:all .15s;margin-top:20px}
+#vx-root .vx-acc-c.feat .vx-acc-btn{background:var(--grad-gold);color:#0A0A0A;border-color:transparent}
+#vx-root .vx-acc-btn:hover{background:var(--grad-gold);color:#0A0A0A;border-color:transparent}
+/* ── BONUS ── */
+#vx-root .vx-bonus-wrap{background:var(--s1);border:1px solid rgba(183,140,50,.18);border-radius:16px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+#vx-root .vx-bonus-lbl{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+#vx-root .vx-bonus-h{font-family:var(--disp);font-weight:700;font-size:clamp(28px,3vw,38px);line-height:1.1;letter-spacing:-.03em;margin-bottom:14px}
+#vx-root .vx-bonus-p{font-size:15px;color:var(--g);line-height:1.7;margin-bottom:20px}
+#vx-root .vx-bonus-disc{font-size:12px;color:var(--g2);font-style:italic;line-height:1.6}
+#vx-root .vx-bonus-box{background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:22px}
+#vx-root .vx-bx-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--bd)}
+#vx-root .vx-bx-row:last-child{border:none}
+#vx-root .vx-bx-lbl{font-size:13px;color:var(--g)}
+#vx-root .vx-bx-val{font-family:var(--disp);font-weight:700;font-size:18px;text-align:right;white-space:nowrap}
+@media(max-width:600px){
+#vx-root .vx-bx-val{font-size:16px}
+#vx-root .vx-bx-val.big{font-size:21px}
+}
+#vx-root .vx-bx-val.teal{color:var(--gold)}
+#vx-root .vx-bx-val.big{font-size:26px;color:var(--gold)}
+#vx-root .vx-bonus-note{margin-top:14px;font-size:12px;color:var(--g2);line-height:1.6}
+/* ── REVIEWS ── */
+#vx-root .vx-rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#vx-root .vx-rev-c{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:22px;display:flex;flex-direction:column}
+#vx-root .vx-rev-stars{color:var(--amber);margin-bottom:12px;font-size:14px;letter-spacing:2px}
+#vx-root .vx-rev-txt{font-size:14px;color:var(--g);line-height:1.65;margin-bottom:14px;font-style:italic}
+#vx-root .vx-rev-head{display:flex;align-items:center;gap:11px;margin-top:auto}
+#vx-root .vx-rev-av{width:38px;height:38px;border-radius:50%;background:var(--grad-gold);color:#0A0A0A;font-family:var(--disp);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+#vx-root .vx-rev-who{font-family:var(--disp);font-weight:600;font-size:13px;color:var(--w)}
+#vx-root .vx-rev-where{font-size:12px;color:var(--g);font-weight:400}
+#vx-root .vx-tp-line{text-align:center;margin-top:28px;font-size:13px;color:var(--g2)}
+/* ── FAQ ── */
+#vx-root .vx-faq-list{display:flex;flex-direction:column;gap:8px}
+#vx-root .vx-faq-it{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+#vx-root .vx-faq-q{width:100%;background:none;border:none;color:var(--w);font-family:var(--disp);font-weight:600;font-size:15px;text-align:left;padding:19px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:background .15s}
+#vx-root .vx-faq-q:hover{background:rgba(255,255,255,.03)}
+#vx-root .vx-faq-ic{color:var(--gold);font-size:22px;flex-shrink:0;transition:transform .2s;line-height:1;font-weight:300}
+#vx-root .vx-faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+#vx-root .vx-faq-a.open{max-height:500px}
+#vx-root .vx-faq-body{padding:0 22px 18px;font-size:14px;color:var(--g);line-height:1.7}
+/* ── FINAL CTA ── */
+#vx-root .vx-fcta{text-align:center;padding:110px 24px;background:radial-gradient(ellipse 60% 70% at 50% 45%,rgba(183,140,50,.13) 0%,transparent 70%),linear-gradient(180deg,var(--bg) 0%,#14100A 50%,var(--bg) 100%)}
+#vx-root .vx-fcta h2{max-width:700px;margin:0 auto 16px;font-size:clamp(32px,5vw,56px)}
+#vx-root .vx-fcta p{font-size:17px;color:var(--g);max-width:500px;margin:0 auto 36px;line-height:1.7}
+#vx-root .vx-fcta .vx-btn{font-size:17px;padding:16px 36px}
+#vx-root .vx-fcta-sub{margin-top:16px;font-size:13px;color:var(--g2)}
+/* ── FOOTER ── */
+#vx-root .vx-footer{background:var(--s1);border-top:1px solid var(--bd);padding:40px 24px}
+#vx-root .vx-foot-i{max-width:var(--max);margin:0 auto}
+#vx-root .vx-foot-disc{font-size:11.5px;color:var(--g2);line-height:1.7;margin-bottom:20px}
+#vx-root .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+#vx-root .foot-links a{font-size:13px;color:var(--g2);transition:color .15s}
+#vx-root .foot-links a:hover{color:var(--w)}
+/* ── UTIL ── */
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+/* Reveal on scroll (solo se activa vía JS si hay IntersectionObserver) */
+#vx-root .vx-rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+#vx-root .vx-rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+#vx-root .vx-rv{opacity:1;transform:none;transition:none}
+}
+#vx-root .divider{height:1px;background:var(--bd);margin:0 24px}
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+#vx-root .vx-trust-i{grid-template-columns:repeat(2,1fr)}
+#vx-root .vx-pain-grid,#vx-root .vx-acc-grid{grid-template-columns:1fr}
+#vx-root .vx-cmp{grid-template-columns:1fr}
+#vx-root .vx-bonus-wrap{grid-template-columns:1fr;padding:28px}
+#vx-root .vx-rev-grid{grid-template-columns:1fr}
+
+}
+@media(max-width:900px){
+#vx-root .vx-hero{padding:64px 24px 52px}
+#vx-root .vx-hb-item{justify-content:center}
+}
+@media(max-width:600px){
+#vx-root .vx-trust-i{grid-template-columns:repeat(2,1fr)}
+#vx-root .vx-sec{padding:56px 20px}
+#vx-root .vx-hero{padding:52px 20px 44px}
+#vx-root .vx-hero h1{font-size:38px}
+}
+/* ── VSL ── */
+#vx-root .vx-vsl-sec{padding:32px 24px 52px;background:var(--bg)}
+#vx-root .vx-vsl-wrap{max-width:720px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid rgba(183,140,50,.18);box-shadow:0 8px 64px rgba(183,140,50,.05)}
+#vx-root .vx-vsl-ph{aspect-ratio:16/9;background:linear-gradient(160deg,#161208 0%,#0A0A0A 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;position:relative}
+#vx-root .vx-vsl-ph::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(183,140,50,.07) 0%,transparent 100%)}
+#vx-root .vx-vsl-play{position:relative;width:76px;height:76px;background:var(--grad-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;color:#0A0A0A;z-index:1;padding-left:5px;transition:all .2s}
+#vx-root .vx-vsl-ph:hover .vx-vsl-play{transform:scale(1.1);box-shadow:0 0 32px rgba(183,140,50,.4)}
+#vx-root .vx-vsl-play::before{content:'';position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(183,140,50,.5);animation:vxRing 2.2s ease-out infinite}
+@keyframes vxRing{0%{transform:scale(.9);opacity:.8}100%{transform:scale(1.45);opacity:0}}
+@media(prefers-reduced-motion:reduce){#vx-root .vx-vsl-play::before{animation:none}}
+#vx-root .vx-vsl-title{font-family:var(--disp);font-weight:700;font-size:17px;color:var(--w);z-index:1;text-align:center;padding:0 24px;max-width:480px}
+#vx-root .vx-vsl-dur{font-size:12px;color:var(--g);z-index:1;letter-spacing:.02em}
+#vx-root .vx-vsl-cap{text-align:center;font-size:13px;color:var(--g2);margin:14px auto 0;max-width:720px;line-height:1.6}
+/* ── OPERA SECTION ── */
+#vx-root .vx-opera-sec{position:relative;height:288px;overflow:hidden;background:var(--bg)}
+#vx-root .vx-op-slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}
+#vx-root .vx-op-slide.active{opacity:1}
+#vx-root .vx-op-slide-bg{width:100%;height:100%;object-fit:cover;display:block}
+#vx-root .vx-op-slide-ph{width:100%;height:100%}
+/* IMÁGENES POR ACTIVO, sustituir cada url('#') por el link real del media library de GHL.
+   Sugerencias Pexels (licencia libre): metales → "gold bars" · petroleo → "oil refinery night"
+   · divisas → "currency banknotes" · indices → "stock chart screen" · acciones → "stock exchange".
+   La capa oscura va integrada: primer gradient = tinte + el overlay global .vx-op-ov.
+   Si un link falla o está en '#', el gradiente de respaldo se muestra solo, nada se rompe. */
+#vx-root .vx-op-slide-ph{background-size:cover;background-position:center;background-repeat:no-repeat}
+#vx-root .vx-op-slide[data-a="metales"] .vx-op-slide-ph{background-image:linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.35)),url('#'),linear-gradient(135deg,#241A06,#4A350C)}
+#vx-root .vx-op-slide[data-a="petroleo"] .vx-op-slide-ph{background-image:linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.35)),url('#'),linear-gradient(135deg,#0E0C08,#1E1910)}
+#vx-root .vx-op-slide[data-a="divisas"] .vx-op-slide-ph{background-image:linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.35)),url('#'),linear-gradient(135deg,#121006,#2A2210)}
+#vx-root .vx-op-slide[data-a="indices"] .vx-op-slide-ph{background-image:linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.35)),url('#'),linear-gradient(135deg,#171204,#332708)}
+#vx-root .vx-op-slide[data-a="acciones"] .vx-op-slide-ph{background-image:linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.35)),url('#'),linear-gradient(135deg,#0C0B08,#26200E)}
+#vx-root .vx-op-ov{position:absolute;inset:0;background:rgba(10,10,10,.58);z-index:1}
+#vx-root .vx-op-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;padding:0 24px}
+#vx-root .vx-op-prefix{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--g);margin-bottom:8px}
+#vx-root .vx-op-name{font-family:var(--disp);font-weight:700;font-size:clamp(54px,9vw,88px);color:var(--w);letter-spacing:-.04em;line-height:1;transition:opacity .25s,transform .25s}
+#vx-root .vx-op-name em{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+#vx-root .vx-op-dots{display:flex;gap:7px;margin-top:18px}
+#vx-root .vx-op-dot{height:4px;width:20px;border-radius:2px;background:rgba(255,255,255,.22);cursor:pointer;transition:all .35s}
+#vx-root .vx-op-dot.active{background:var(--gold);width:34px}
+/* ── PAYMENT METHODS ── */
+#vx-root .vx-pay-grid{display:flex;flex-direction:column;gap:16px}
+#vx-root .vx-pay-c{background:var(--bg);border:1px solid var(--bd);border-radius:var(--r);padding:26px 30px;transition:border-color .2s;display:grid;grid-template-columns:auto 1fr minmax(0,auto);grid-template-rows:auto auto;column-gap:22px;row-gap:5px;align-items:center}
+#vx-root .vx-pay-c:hover{border-color:rgba(183,140,50,.3)}
+#vx-root .vx-pay-icon{grid-row:1/3;margin:0;display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:14px;background:rgba(183,140,50,.10);border:1px solid rgba(183,140,50,.26)}
+#vx-root .vx-pay-c h3{grid-column:2;grid-row:1;align-self:end;font-family:var(--disp);font-weight:700;font-size:18px;margin:0}
+#vx-root .vx-pay-c > p{grid-column:2;grid-row:2;align-self:start;font-size:14px;color:var(--g);line-height:1.6;margin:0}
+#vx-root .vx-pay-nets{grid-column:3;grid-row:1/3;display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:400px;margin:0}
+#vx-root .vx-net-tag{font-size:11px;font-weight:600;background:rgba(183,140,50,.1);border:1px solid rgba(183,140,50,.2);color:var(--gold);padding:3px 9px;border-radius:100px;letter-spacing:.02em}
+@media(max-width:768px){
+#vx-root .vx-pay-c{grid-template-columns:auto 1fr;grid-template-rows:auto auto auto;row-gap:8px;padding:22px}
+#vx-root .vx-pay-icon{grid-row:1/3}
+#vx-root .vx-pay-nets{grid-column:1/3;grid-row:3;justify-content:flex-start;max-width:none;margin-top:6px}
+}
+#vx-root .vx-hero-bullets{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+#vx-root .vx-hb-item{display:flex;align-items:center;gap:10px;background:rgba(183,140,50,.07);border:1px solid rgba(183,140,50,.18);border-radius:9px;padding:10px 16px}
+#vx-root .vx-hb-icon{display:flex;align-items:center;line-height:1}
+#vx-root .vx-hb-txt{font-family:var(--disp);font-weight:700;font-size:14px;color:var(--w)}
+@media(max-width:600px){
+#vx-root .vx-hero-bullets{flex-direction:column;gap:8px}
+#vx-root .vx-hb-item{padding:10px 14px}
+}
+</style>
+
+<div id="vx-root">
+<div class="vx-top-bar">
+  <div class="vx-top-bar-i">
+    <span class="vx-tb-item">
+      <span class="vx-tb-teal">🇲🇽</span>
+      Registrado en México ante el RPC · N° 2025008508
+    </span>
+    <span class="vx-tb-sep">|</span>
+    <span class="vx-tb-item">
+      <span class="vx-tb-teal">✦</span>
+      Bono de bienvenida del 100%, topado a $2,000 USD
+    </span>
+  </div>
+</div>
+
+<div class="vx-nav">
+  <div class="vx-nav-i">
+    <a href="#" class="vx-logo-link" aria-label="Vex Pro, inicio">
+      <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a4f1ae1eada8c1f457ac616.png" alt="Vex Pro, Empowering Your Financial Future" class="vx-logo-img"
+           onerror="this.style.display='none';this.parentNode.querySelector('.vx-logo').style.display='inline'">
+      <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a4f07ae48f33735722accbb.svg" alt="Vex Pro" class="vx-logo-img-m"
+           onerror="this.style.display='none';this.parentNode.querySelector('.vx-logo').style.display='inline'">
+      <span class="vx-logo" style="display:none">Vex<span>Pro</span></span>
+    </a>
+    <a href="https://my.vexprofx.com/register/VM9760" class="vx-nav-btn">Abre tu cuenta →</a>
+  </div>
+</div>
+
+<div class="vx-hero">
+  <div class="vx-hero-copy">
+  <div class="vx-hero-eyebrow"><span class="vx-pulse"></span>Broker registrado en México · LATAM</div>
+  <h1>Opera con un broker <em>sin trabas.</em></h1>
+  <p class="vx-hero-sub">No operamos contra ti. Vex Pro opera con latencia menor a 20 ms, procesa retiros en menos de 24 horas y te atiende en español, con personas, no con chatbots.</p>
+  <div class="vx-hero-bullets">
+    <div class="vx-hb-item"><span class="vx-hb-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B78C32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span><span class="vx-hb-txt">Ejecucion máx 20 ms</span></div>
+    <div class="vx-hb-item"><span class="vx-hb-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B78C32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></svg></span><span class="vx-hb-txt">Retiros máx 24 horas</span></div>
+    <div class="vx-hb-item"><span class="vx-hb-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B78C32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="vx-hb-txt">Soporte humano en espanol</span></div>
+  </div>
+
+  <div class="vx-hero-ctas">
+    <a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Abre tu cuenta, es gratis →</a>
+    <a href="#vx-cuentas" class="vx-btn-outline">Ver tipos de cuenta</a>
+  </div>
+  <div class="vx-hero-proof">
+    <span class="vx-tp-badge" role="img" aria-label="4 de 5 estrellas en Trustpilot"><i>★</i><i>★</i><i>★</i><i>★</i></span>
+    <span class="vx-proof-txt">4 estrellas en Trustpilot · +70 calificaciones</span>
+  </div>
+  </div></div>
+
+
+<section class="vx-opera-sec">
+  <div class="vx-op-slide" data-a="metales">
+    <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a56a3d9524a3ec4c6947193.jpg" class="vx-op-slide-bg" alt="">
+  </div>
+  <div class="vx-op-slide active" data-a="petroleo">
+    <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a56a08e524a3ec4c69392ad.jpg" class="vx-op-slide-bg" alt="">
+  </div>
+  <div class="vx-op-slide" data-a="divisas">
+    <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a56a3d9524a3ec4c694718e.jpg" class="vx-op-slide-bg" alt="">
+  </div>
+  <div class="vx-op-slide" data-a="indices">
+    <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a56a3d99c9b37b5fd9271c3.jpg" class="vx-op-slide-bg" alt="">
+  </div>
+  <div class="vx-op-slide" data-a="acciones">
+    <img src="https://assets.cdn.filesafe.space/5QwQdzGsoU9rtMMrJdaL/media/6a56a3d960d0bb1c1a266019.jpg" class="vx-op-slide-bg" alt="">
+  </div>
+  <div class="vx-op-ov"></div>
+  <div class="vx-op-content">
+    <p class="vx-op-prefix">con Vex Pro puedes operar</p>
+    <div class="vx-op-name" id="vx-opName" style="opacity: 1; transform: translateY(0px);">Petróleo</div>
+    <div class="vx-op-dots" id="vx-opDots">
+      <div class="vx-op-dot"></div>
+      <div class="vx-op-dot active"></div>
+      <div class="vx-op-dot"></div>
+      <div class="vx-op-dot"></div>
+      <div class="vx-op-dot"></div>
+    </div>
+  </div>
+</section>
+<section class="vx-sec" style="background:var(--bg)">
+  <div class="vx-con">
+    <span class="vx-tag">El problema real</span>
+    <h2>¿Por qué no logras crecer tu cuenta fuera de tu propia operativa?<br><em>Tres razones.</em></h2>
+    <p class="vx-sec-desc">La mayoría de brokers no quiere verte ganar. Cuando el broker falla y no está ahí para respaldar a sus clientes, el trader pierde. Y a veces, ni sabe exactamente por qué.</p>
+    <div class="vx-pain-grid">
+      <div class="vx-pain-c">
+        <div class="vx-pain-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Ejecución lenta</h3>
+        <p>Tu stop loss saltó. Tu TP llegó al precio y no se cerró. No siempre es tu análisis, a veces tu broker tardó segundos en ejecutar.</p>
+        <div class="vx-pain-stat">Máx 20 ms</div>
+        <div class="vx-pain-stat-lbl">Ejecución en Vex Pro</div>
+      </div>
+      <div class="vx-pain-c">
+        <div class="vx-pain-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Retiros que no llegan</h3>
+        <p>Días esperando. Documentos que nunca son suficientes. Soporte que no contesta. Tu dinero es tuyo, pero alguien decidió que no.</p>
+        <div class="vx-pain-stat">Máx 24 h</div>
+        <div class="vx-pain-stat-lbl">Retiros en Vex Pro</div>
+      </div>
+      <div class="vx-pain-c">
+        <div class="vx-pain-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M8 4h8"/><circle cx="9" cy="13.5" r="1"/><circle cx="15" cy="13.5" r="1"/><path d="M9 17h6"/></svg></div>
+        <h3>Soporte fantasma</h3>
+        <p>Escribes, llega un bot. Escribes de nuevo, nadie conoce tu caso. En Vex Pro tienes un asesor en español que responde ahora mismo.</p>
+        <div class="vx-pain-stat">24/7</div>
+        <div class="vx-pain-stat-lbl">Soporte humano en español</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:36px"><a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Abre tu cuenta gratis →</a></div>
+</section>
+
+<section class="vx-sec vx-sec-light">
+  <div class="vx-con">
+    <span class="vx-tag">La diferencia real</span>
+    <h2>Otros brokers vs <em>Vex Pro.</em></h2>
+    <div class="vx-cmp">
+      <div class="vx-cmp-col bad">
+        <div class="vx-cmp-head">🚫 Otros brokers</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Retiros en días o semanas</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Soporte en inglés o respuestas automáticas</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Ejecución lenta, tu SL salta "de mala suerte"</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Spreads que cambian sin aviso</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Depósito mínimo alto o condiciones confusas</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Bono con letra chica que no puedes retirar jamás</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✕</span> Sin presencia real en Latinoamérica</div>
+      </div>
+      <div class="vx-cmp-col good">
+        <div class="vx-cmp-head">✓ Vex Pro</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Retiro en menos de 24 horas, sin asteriscos</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Asesor humano en español disponible ahora</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Ejecución máx 20 ms, sin excusas</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> ECN desde 0.0 pips, sin sorpresas</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Desde $50 con cuenta CENT</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Equity Bonus 100%, condiciones claras desde el día uno</div>
+        <div class="vx-cmp-row"><span class="vx-ci">✓</span> Registrado en México como SAPI de C.V.</div>
+      </div>
+    </div>
+    <div class="vx-cmp-cta">
+      <a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Quiero operar con Vex Pro →</a>
+    </div>
+  </div>
+</section>
+
+<section class="vx-sec" style="background:var(--bg)">
+  <div class="vx-con">
+    <span class="vx-tag">Lo que dicen los traders</span>
+    <h2>No te lo decimos nosotros.<br><em>Te lo dicen ellos.</em></h2>
+    <p class="vx-sec-desc">4 estrellas en Trustpilot. Testimonios verificables de traders en México, Colombia y Venezuela.</p>
+    <div class="vx-rev-grid">
+      <div class="vx-rev-c">
+        <div class="vx-rev-stars">★★★★★</div>
+        <p class="vx-rev-txt">"Lo que más me convenció fue el retiro. Hice la prueba con $100 primero. En menos de 18 horas ya estaba en mi cuenta. Ahí decidí depositar en serio."</p>
+        <div class="vx-rev-head"><div class="vx-rev-av" aria-hidden="true">C</div><div class="vx-rev-who">Carlos M. <span class="vx-rev-where">· México 🇲🇽</span></div></div>
+      </div>
+      <div class="vx-rev-c">
+        <div class="vx-rev-stars">★★★★★</div>
+        <p class="vx-rev-txt">"Venía de otro broker que tardaba 5 días en retirar. Con Vex Pro tardé menos de 24 horas la primera vez. El soporte en español es real, no es un bot con guión."</p>
+        <div class="vx-rev-head"><div class="vx-rev-av" aria-hidden="true">A</div><div class="vx-rev-who">Andrea R. <span class="vx-rev-where">· Colombia 🇨🇴</span></div></div>
+      </div>
+      <div class="vx-rev-c">
+        <div class="vx-rev-stars">★★★★</div>
+        <p class="vx-rev-txt">"Los spreads ECN hicieron la diferencia. Estaba pagando 2 pips en EUR/USD con mi broker anterior. Aquí pago 0.3. En volumen, eso se siente en la cuenta al mes."</p>
+        <div class="vx-rev-head"><div class="vx-rev-av" aria-hidden="true">R</div><div class="vx-rev-who">Roberto V. <span class="vx-rev-where">· Venezuela 🇻🇪</span></div></div>
+      </div>
+    </div>
+    <p class="vx-tp-line">Powered by Trustpilot · Calificación promedio: 4/5 estrellas</p>
+  <div style="text-align:center;margin-top:36px"><a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Abre tu cuenta gratis →</a></div>
+
+  </div>
+</section>
+
+<section class="vx-sec" id="vx-cuentas" style="background:var(--s1)">
+  <div class="vx-con">
+    <span class="vx-tag">Tipos de cuenta</span>
+    <h2>Una cuenta para <em>cada etapa.</em></h2>
+    <p class="vx-sec-desc">No importa si estás empezando o llevas años operando. En Vex Pro hay una cuenta calibrada a tus necesidades, a la etapa de trader o tus cualidades.</p>
+    <div class="vx-acc-grid">
+      <div class="vx-acc-c">
+        <div class="vx-acc-badge">Para empezar</div>
+        <h3>Cuenta CENT</h3>
+        <p class="vx-acc-from">Desde <strong>$50</strong> USD</p>
+        <div class="vx-feat-row"><span>Depósito mínimo</span><span>$50 USD</span></div>
+        <div class="vx-feat-row"><span>Unidades operativas</span><span>100,000 x $1</span></div>
+        <div class="vx-feat-row"><span>Riesgo real</span><span>Muy bajo</span></div>
+        <div class="vx-feat-row"><span>Plataforma</span><span>MT5</span></div>
+        <div class="vx-feat-row"><span>Retiro</span><span>Máx 24 h</span></div>
+        <button class="vx-acc-btn" onclick="window.location='https://my.vexprofx.com/register/VM9760'">Abrir cuenta CENT</button>
+      </div>
+      <div class="vx-acc-c feat">
+        <div class="vx-acc-badge">Más popular</div>
+        <h3>Cuenta STP</h3>
+        <p class="vx-acc-from">Desde <strong>$100</strong> USD</p>
+        <div class="vx-feat-row"><span>Depósito mínimo</span><span>$100 USD</span></div>
+        <div class="vx-feat-row"><span>Spreads</span><span>Desde 1.0 pip</span></div>
+        <div class="vx-feat-row"><span>Comisión</span><span>Sin comisión</span></div>
+        <div class="vx-feat-row"><span>Plataforma</span><span>MT5</span></div>
+        <div class="vx-feat-row"><span>Retiro</span><span>Máx 24 h</span></div>
+        <button class="vx-acc-btn" onclick="window.location='https://my.vexprofx.com/register/VM9760'">Abrir cuenta STP</button>
+      </div>
+      <div class="vx-acc-c">
+        <div class="vx-acc-badge">Para expertos</div>
+        <h3>Cuenta ECN</h3>
+        <p class="vx-acc-from">Desde <strong>$200</strong> USD</p>
+        <div class="vx-feat-row"><span>Depósito mínimo</span><span>$200 USD</span></div>
+        <div class="vx-feat-row"><span>Spreads</span><span>Desde 0.0 pips</span></div>
+        <div class="vx-feat-row"><span>Ejecución</span><span>Máx 20 ms</span></div>
+        <div class="vx-feat-row"><span>Plataforma</span><span>MT5</span></div>
+        <div class="vx-feat-row"><span>Retiro</span><span>Máx 24 h</span></div>
+        <button class="vx-acc-btn" onclick="window.location='https://my.vexprofx.com/register/VM9760'">Abrir cuenta ECN</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vx-sec" style="background:var(--bg)">
+  <div class="vx-con">
+    <span class="vx-tag">Bono de bienvenida</span>
+    <h2>100% de tu depósito. <em>Sin rodeos.</em></h2>
+    <p class="vx-sec-desc">Te decimos exactamente cómo funciona antes de que abras la cuenta, porque no te vamos a esconder nada.</p>
+    <div class="vx-bonus-wrap">
+      <div>
+        <div class="vx-bonus-lbl">Equity Bonus</div>
+        <div class="vx-bonus-h">El bono trabaja<br>para ti, no al revés.</div>
+        <p class="vx-bonus-p">Si depositas $500, Vex Pro agrega $500 adicionales como Equity Bonus. Ese dinero protege tu cuenta cuando el mercado va en tu contra: amplía tu margen y te da más resistencia para aguantar drawdowns. Las ganancias que genera son completamente tuyas, sin restricciones. El bono en sí no es retirable, y eso lo sabes desde antes de empezar.</p>
+        <p class="vx-bonus-disc">El bono está topado en $2,000 USD. Aplica solo a nuevos clientes. Los bonos no son retirables. Las ganancias generadas sobre el bono sí son retirables sin restricciones. Condiciones completas disponibles en vexprofx.com.</p>
+      </div>
+      <div class="vx-bonus-box">
+        <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g);margin-bottom:4px">Ejemplo: depósito de $500</p>
+        <div class="vx-bx-row"><span class="vx-bx-lbl">Tu depósito</span><span class="vx-bx-val">$500 USD</span></div>
+        <div class="vx-bx-row"><span class="vx-bx-lbl">Equity Bonus (100%)</span><span class="vx-bx-val teal">+ $500 USD</span></div>
+        <div class="vx-bx-row"><span class="vx-bx-lbl">Respaldo total en cuenta</span><span class="vx-bx-val big">$1,000 USD</span></div>
+        <p class="vx-bonus-note">El bono actúa como colchón de margen. Si el mercado va en tu contra, protege tu capital antes de una liquidación. <strong style="color:var(--w)">El bono no es retirable. Tus ganancias sí, siempre.</strong></p>
+      </div>
+    </div>
+
+  <div style="text-align:center;margin-top:36px"><a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Abre tu cuenta gratis →</a></div>
+  </div>
+</section>
+
+<section class="vx-sec" style="background:var(--s1)">
+  <div class="vx-con">
+    <span class="vx-tag">Metodos de deposito</span>
+    <h2>Deposita como <em>prefieras.</em></h2>
+    <p class="vx-sec-desc" style="margin-bottom:36px">Tres formas de entrar al mercado. Sin complicaciones, sin letra chica.</p>
+    <div class="vx-pay-grid">
+      <div class="vx-pay-c">
+        <div class="vx-pay-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h3.75a1.75 1.75 0 0 1 0 3.5h-2.5a1.75 1.75 0 0 0 0 3.5h3.75"/></svg></div>
+        <h3>USDT</h3>
+        <p>Stablecoin en multiples redes blockchain, la forma mas rapida de depositar.</p>
+        <div class="vx-pay-nets">
+          <span class="vx-net-tag">BNB Smart Chain</span>
+          <span class="vx-net-tag">Tron</span>
+          <span class="vx-net-tag">Ethereum</span>
+          <span class="vx-net-tag">Solana</span>
+          <span class="vx-net-tag">Arbitrum</span>
+          <span class="vx-net-tag">Polygon</span>
+          <span class="vx-net-tag">Avalanche</span>
+          <span class="vx-net-tag">Algorand</span>
+        </div>
+      </div>
+      <div class="vx-pay-c">
+        <div class="vx-pay-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+        <h3>Tarjeta</h3>
+        <p>Deposito con tarjeta de credito o debito.</p>
+        <div class="vx-pay-nets">
+          <span class="vx-net-tag">Visa</span>
+          <span class="vx-net-tag">Mastercard</span>
+        </div>
+      </div>
+      <div class="vx-pay-c">
+        <div class="vx-pay-icon"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#B78C32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 18h16M5 18V10M9.5 18V10M14.5 18V10M19 18V10M12 3 3 8h18l-9-5z"/></svg></div>
+        <h3>Transferencia bancaria</h3>
+        <p>Transferencia directa desde tu banco, sin intermediarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="vx-sec" style="background:var(--bg)">
+  <div class="vx-con">
+    <span class="vx-tag">Preguntas frecuentes</span>
+    <h2>Las preguntas que nadie<br><em>te responde directo.</em></h2>
+    <p class="vx-sec-desc" style="margin-bottom:32px">Nosotros sí.</p>
+    <div class="vx-faq-list">
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿Vex Pro es confiable o me pueden robar?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">Vex Pro está registrada en México como SAPI de C.V. y forma parte de Vex Group, un conglomerado que opera en bienes raíces, marketing y proveeduría de liquidez para otros brokers. La forma más directa de verificarlo: deposita $50, mete un par de operaciones y solicita un retiro. Cuando el dinero llegue a tu billetera, ya tienes tu respuesta. También puedes revisar reseñas reales en Trustpilot y pedir testimonios verificados a nuestro equipo.</div></div>
+      </div>
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿Puedo retirar cuando quiera?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">Sí. No hay ventanas de retiro ni días específicos. Solicitas y el proceso se completa en menos de 24 horas. Si el broker te pone peros para sacar TU plata, eso no es un broker, es una trampa con logo bonito. Aquí no funciona así. Tu dinero está disponible cuando tú decidas.</div></div>
+      </div>
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿El bono tiene letra chica?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">El bono es del 100% sobre tu depósito, topado en $2,000 USD. Es un Equity Bonus, actúa como colchón de margen en tu cuenta, no como dinero que puedes retirar directamente. Lo que sí puedes retirar sin ninguna restricción son las ganancias que ese bono te genere. Te lo decimos antes de que abras la cuenta porque no queremos sorpresas.</div></div>
+      </div>
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿Por qué Vex Pro y no otro broker?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">No estamos aquí para atacar a nadie. Lo que sí podemos decirte es que Vex Pro tiene presence real en LATAM, un equipo que habla español de verdad, retiros en menos de 24 horas verificados por clientes reales, y un ecosistema completo en un solo lugar: desde cuentas CENT hasta Prop Firm y Copytrading. Pruébalo con poco antes de comprometerte con más.</div></div>
+      </div>
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿El Prop Firm es real?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">Sí. El programa de fondeo de Vex Pro permite operar capital externo sin arriesgar el tuyo propio, sujeto a reglas de evaluación y drawdown que están publicadas de forma transparente. Si quieres ver casos de traders fondeados reales antes de decidir, nuestro equipo puede mostrártelos.</div></div>
+      </div>
+      <div class="vx-faq-it">
+        <button class="vx-faq-q" onclick="vxFaq(this)">¿Puedo operar en serio con solo $50?<span class="vx-faq-ic">+</span></button>
+        <div class="vx-faq-a"><div class="vx-faq-body">Sí. La cuenta CENT está diseñada exactamente para eso: tus $50 se convierten en 50,000 unidades operativas, lo que te permite abrir lotes muy pequeños y practicar gestión de riesgo real sin quemar tu capital en los primeros errores. Es la misma operativa, con riesgo controlado.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="vx-fcta">
+  <div class="vx-con">
+    <h2>¿Vas a seguir con el mismo broker, o <em>vamos a operar en serio?</em></h2>
+    <p>Sin exámenes. Sin ventanas de retiro. Sin soporte fantasma. Solo las condiciones que siempre mereciste.</p>
+    <a href="https://my.vexprofx.com/register/VM9760" class="vx-btn">Abre tu cuenta gratis →</a>
+    <p class="vx-fcta-sub">Sin costo de apertura · Retiro en máx 24 h · Soporte en español ahora mismo</p>
+  </div>
+</div>
+
+<div class="vx-footer">
+  <div class="vx-foot-i">
+    <p class="vx-foot-disc">Vex Pro es una marca comercial de VEXPRO S.A.P.I. de C.V. (México). La operativa con CFDs implica un alto nivel de riesgo y puede resultar en la pérdida de todo el capital invertido. El apalancamiento amplifica tanto las ganancias como las pérdidas. No es apto para todos los inversores. El rendimiento pasado no garantiza resultados futuros. El Equity Bonus de bienvenida (100%, topado $2,000 USD) no es retirable; las ganancias generadas sobre el bono sí lo son. Condiciones completas en vexprofx.com.</p>
+    
+  </div>
+</div>
+
+
+</div>
+
+<script>
+function vxFaq(btn){
+  const item=btn.closest('.vx-faq-it');
+  const ans=item.querySelector('.vx-faq-a');
+  const ic=btn.querySelector('.vx-faq-ic');
+  const open=ans.classList.contains('open');
+  document.querySelectorAll('.vx-faq-a.open').forEach(a=>a.classList.remove('open'));
+  document.querySelectorAll('.vx-faq-ic').forEach(i=>{i.textContent='+';i.style.transform='';});
+  if(!open){ans.classList.add('open');ic.textContent='−';}
+}
+
+// Opera cycle
+(function(){
+  var a=['Metales','Petr\u00f3leo','Divisas','\u00cdndices','Acciones'];
+  var slides=document.querySelectorAll('.vx-op-slide');
+  var nm=document.getElementById('vx-opName');
+  var dots=document.querySelectorAll('.vx-op-dot');
+  var c=0;
+  if(!nm) return;
+  function go(i){
+    slides[c].classList.remove('active');
+    dots[c].classList.remove('active');
+    c=i;
+    slides[c].classList.add('active');
+    dots[c].classList.add('active');
+    nm.style.opacity='0';
+    nm.style.transform='translateY(9px)';
+    setTimeout(function(){nm.textContent=a[c];nm.style.opacity='1';nm.style.transform='translateY(0)';},220);
+  }
+  dots.forEach(function(d,i){d.addEventListener('click',function(){go(i);});});
+  setInterval(function(){go((c+1)%a.length);},3000);
+})();
+
+// Reveal on scroll, degradación segura: sin IO, todo queda visible
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.vx-pain-c,.vx-acc-c,.vx-pay-c,.vx-rev-c,.vx-cmp-col,.vx-bonus-wrap,.vx-faq-it,.vx-sec .vx-tag,.vx-sec h2,.vx-sec-desc');
+  els.forEach(function(el,i){el.classList.add('vx-rv');el.style.transitionDelay=(i%3)*70+'ms';});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+
+
+// Contadores animados en el trust strip (+ estrellas escalonadas)
+(function(){
+  var nums=document.querySelectorAll('#vx-root .vx-t-num, #vx-root .vx-pain-stat');
+  if(!nums.length||!('IntersectionObserver' in window))return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      io.unobserve(e.target);
+      var el=e.target,txt=el.textContent;
+      // Estrellas: aparecen una por una
+      if(txt.indexOf('\u2605')>-1){
+        el.textContent='';
+        txt.split('').forEach(function(ch,i){
+          var sp=document.createElement('span');
+          sp.textContent=ch;
+          sp.style.cssText='display:inline-block;opacity:0;transform:scale(.3);background:linear-gradient(100deg,#F9E298,#B78C32);-webkit-background-clip:text;background-clip:text;color:transparent;transition:opacity .45s ease '+(i*200)+'ms,transform .45s cubic-bezier(.34,1.56,.64,1) '+(i*200)+'ms';
+          el.appendChild(sp);
+          requestAnimationFrame(function(){requestAnimationFrame(function(){sp.style.opacity='1';sp.style.transform='scale(1)';});});
+        });
+        return;
+      }
+      // Números: cuentan hacia arriba conservando prefijo/sufijo del copy
+      var m=txt.match(/^([^0-9]*)([0-9][0-9,\.]*)(.*)$/);
+      if(!m)return;
+      var pre=m[1],raw=m[2].replace(/,/g,''),suf=m[3];
+      var target=parseFloat(raw),dec=(raw.split('.')[1]||'').length;
+      var dur=1300,t0=null;
+      function fmt(v){return v.toFixed(dec);}
+      function step(ts){
+        if(!t0)t0=ts;
+        var pgs=Math.min((ts-t0)/dur,1);
+        pgs=1-Math.pow(1-pgs,3);
+        el.textContent=pre+fmt(target*pgs)+suf;
+        if(pgs<1)requestAnimationFrame(step);else el.textContent=txt;
+      }
+      requestAnimationFrame(step);
+    });
+  },{threshold:.6});
+  nums.forEach(function(n){io.observe(n);});
+})();
+
+// Navbar fijo al hacer scroll, funciona aunque GHL rompa position:sticky
+(function(){
+  var nav=document.querySelector('#vx-root .vx-nav');
+  if(!nav)return;
+  var spacer=document.createElement('div');
+  spacer.style.display='none';
+  nav.parentNode.insertBefore(spacer,nav.nextSibling);
+  var trigger=0;
+  function measure(){
+    if(!nav.classList.contains('vx-nav-fixed')){
+      trigger=nav.getBoundingClientRect().top+window.pageYOffset;
+    }
+  }
+  function onScroll(){
+    if(window.pageYOffset>trigger){
+      if(!nav.classList.contains('vx-nav-fixed')){
+        spacer.style.cssText='display:block;height:'+nav.offsetHeight+'px';
+        nav.classList.add('vx-nav-fixed');
+      }
+    }else if(nav.classList.contains('vx-nav-fixed')){
+      nav.classList.remove('vx-nav-fixed');
+      spacer.style.display='none';
+    }
+  }
+  measure();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',function(){nav.classList.remove('vx-nav-fixed');spacer.style.display='none';measure();onScroll();});
+  onScroll();
+})();
+
+// Smooth scroll para anclas internas (GHL no hereda scroll-behavior de html)
+(function(){
+  document.querySelectorAll('#vx-root a[href^="#vx-"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=document.querySelector(a.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+})();
+
+// ── PERSISTENCIA DE UTMs Y PARÁMETROS DE URL (NUEVO) ──
+// Captura cualquier UTM, parámetro (?...) o hash externo en la URL actual y lo añade a los CTAs.
+(function(){
+  var queryString = window.location.search; // Captura todo lo que empiece por ?utm_...
+  var hashString = window.location.hash;    // Captura #... por si tu campaña manda datos por hash
+  
+  // Excluimos las anclas internas de navegación de esta landing (#vx-cuentas, etc.)
+  if (hashString && hashString.indexOf('#vx-') !== -1) {
+    hashString = '';
+  }
+
+  // Si el visitante no trae ningún parámetro, no modificamos nada
+  if (!queryString && !hashString) return; 
+
+  // Función para construir la URL destino conservando los parámetros
+  function appendParams(url) {
+    if (!url || url.indexOf('my.vexprofx.com') === -1) return url;
+    
+    var base = url.split('?')[0].split('#')[0];
+    var existingQuery = url.indexOf('?') !== -1 ? url.split('?')[1].split('#')[0] : '';
+    
+    var finalQuery = queryString;
+    if (existingQuery) {
+      finalQuery = (queryString ? queryString + '&' + existingQuery : '?' + existingQuery);
+    }
+    
+    return base + finalQuery + hashString;
+  }
+
+  // 1. Inyectar en todas las etiquetas <a> que lleven al registro
+  var links = document.querySelectorAll('#vx-root a[href*="my.vexprofx.com"]');
+  links.forEach(function(a){
+    a.href = appendParams(a.getAttribute('href'));
+  });
+
+  // 2. Inyectar en los botones de los tipos de cuenta que usan onclick
+  var buttons = document.querySelectorAll('#vx-root button[onclick*="my.vexprofx.com"]');
+  buttons.forEach(function(btn){
+    var targetUrl = "https://my.vexprofx.com/register/VM9760";
+    btn.setAttribute('onclick', "window.location='" + appendParams(targetUrl) + "'");
+  });
+})();
+</script>
+</body>
+</html>
